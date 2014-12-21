@@ -1,8 +1,9 @@
 ## Working firectory is UCI HAR Dataset with the subdirectory  
 ## and file structure as was in the original zip file.
 
-## Load the reshape2 package to be used in STEP 5
+## Load the data.table and reshape2 package
 
+library(data.table)
 library(reshape2)
 
 ## STEP 1: Merges the training and the test sets to create one data set
@@ -64,4 +65,4 @@ melted <- melt(combined, id=c("subjectID","activity"))
 tidy <- dcast(melted, subjectID+activity ~ variable, mean)
 
 # Write the tidy data set to a file
-write.csv(tidy, "tidy.csv", row.names=FALSE)
+write.table(tidy, "tidy.txt", row.names=FALSE)
