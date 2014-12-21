@@ -12,8 +12,8 @@ The class project for Getting and Cleaning Data was to read in the "Human Activi
 This will create a directory **UCI HAR Dataset** with all the subdirectories and files structure as was in the zip file.
 Make sure that your working directory is **UCI HAR Dataset**.
 
-Once those steps are complete, you can run the R script (run_analysis.R). It requires the *reshape2* package. If you don't have the package, download it from CRAN.
+Once those steps are complete, you can run the R script (run_analysis.R). It requires the *data.table* and *reshape2* packages. If you don't have these packages, download them from CRAN.
 
-**The output of the R script is a tidy data set, *tidy.csv*.**
+**The output of the R script is a tidy data set, *tidy.txt*.**
 
 You can read more about the data and the analysis in the **code book**.
