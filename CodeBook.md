@@ -32,12 +32,12 @@ The following steps are involved:
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Implementation of steps
-* Loaded reshapre2 package.
+* Loaded data.table and reshapre2 packages.
 * All relevant data files were read into data frames; appropriate column headers were added; and the training and test sets were combined into a single data set.
 * All feature columns were removed that did not contain the exact string "mean()" or "std()". This left 66 feature columns, plus the subjectID and activity columns.
 * The activity column was converted from an integer to a factor using labels describing the activities.
 * A tidy data set was created containing the mean of each feature for each subject and each activity. Thus, subject #1 has 6 rows in the tidy data set (one row for each activity), and each row contains the mean value for each of the 66 features for that subject/activity combination. Since there are 30 subjects, there are a total of 180 rows.
-* The tidy data set was output to a CSV file.
+* The tidy data set was output to a txt file.
 
 
 
